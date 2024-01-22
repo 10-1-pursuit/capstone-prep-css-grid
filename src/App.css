@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+
+header {
+  padding: 10px;
+  text-align: center;
+  background-color: #f00000;
+}
+
+.logo {
+  height: 150px;
+}
+
+nav {
+  padding: 25px 0 10px 0;
+  background-color: #222224;
+}
+
+input {
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+input[type="text"] {
+  font-family: "Exo 2";
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+button {
+  height: 50px;
+  display: block;
+  margin: 5px auto;
+}
+
+main {
+  background-color: #f0f0f0;
+}
+
+h2 {
+  margin: 0;
+  padding-top: 30px;
+  font-size: 3rem;
+}
+
+footer {
+  text-align: center;
+  background-color: #222224;
+  color: #f0f0f0;
+  padding: 10px;
+}
+
+.psyduck-button {
+  height: 100%;
+}
+
+.pokemon {
+  text-align: center;
+
+}
+
+.sprite {
+  height: 300px;
+}
+
+
