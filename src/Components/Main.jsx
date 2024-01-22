@@ -1,4 +1,5 @@
 import React from 'react';
+import pokeGIF from '../assets/ghost-poke.gif'
 
 const Main = ({ pokemon }) => {
     return (
@@ -13,7 +14,14 @@ const Main = ({ pokemon }) => {
                     className="sprite"
                     src={pokemon.sprites.front_default}
                     />
-                </div> : null
+                </div> 
+                : 
+                <div className="img-container">
+                    <img 
+                    className="poke-gif"
+                    src={pokeGIF} 
+                    />
+                </div>
             
             }
         </main>

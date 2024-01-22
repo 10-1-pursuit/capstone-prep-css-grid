@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
 
+.app {
+  height: 100vh;
+  display: grid;
+}
 
 header {
   padding: 10px;
   text-align: center;
   background-color: #f00000;
-}
-
-.logo {
-  height: 150px;
 }
 
 nav {
@@ -45,10 +45,15 @@ h2 {
 }
 
 footer {
-  text-align: center;
   background-color: #222224;
   color: #f0f0f0;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 150px;
 }
 
 .psyduck-button {
@@ -57,9 +62,20 @@ footer {
 
 .pokemon {
   text-align: center;
-
 }
 
 .sprite {
   height: 300px;
+}
+
+.img-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poke-gif {
+  height: 300px;
+  padding-bottom: 0px;
 }
