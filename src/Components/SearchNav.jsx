@@ -14,7 +14,7 @@ const SearchNav = ({ setPokemon }) => {
         fetch(`https://pokeapi.co/api/v2/pokemon/${poke}`)
             .then(res => res.json())
             .then(res => {
-                setPoke(poke => "")
+                setPoke((prev) => "")
                 setPokemon(res)
                 console.log(res)
             })

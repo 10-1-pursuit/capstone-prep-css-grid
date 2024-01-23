@@ -3,21 +3,39 @@
 .app {
   height: 100vh;
   display: grid;
+  gap: 2px;
+  grid-template-areas: 
+  "e h h h a"
+  "e n n n a"
+  "e m m m a"
+  "e m m m a"
+  "e m m m a"
+  "e f f f a"
+  ;
 }
 
 header {
   padding: 10px;
+  /* height: max-content; */
   text-align: center;
   background-color: #f00000;
+  grid-area: h;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 nav {
-  padding: 25px 0 10px 0;
+  padding: 15px 0 8px 0;
   background-color: #222224;
+  grid-area: n;
+  /* height: min-content; */
+  display: grid;
+  align-items: center;
 }
 
 input {
-  height: 30px;
+  /* height: 30px; */
   display: block;
   margin: 0 auto;
 }
@@ -29,18 +47,19 @@ input[type="text"] {
 }
 
 button {
-  height: 50px;
+  height: 2rem;
   display: block;
-  margin: 5px auto;
+  margin: 7px auto;
 }
 
 main {
-  background-color: #f0f0f0;
+  background-color: white;
+  grid-area: m;
 }
 
 h2 {
   margin: 0;
-  padding-top: 30px;
+  /* padding-top: 30px; */
   font-size: 3rem;
 }
 
@@ -50,6 +69,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-area: f;
 }
 
 .logo {
@@ -65,7 +85,7 @@ footer {
 }
 
 .sprite {
-  height: 300px;
+  height: 100px;
 }
 
 .img-container {
@@ -78,4 +98,39 @@ footer {
 .poke-gif {
   height: 300px;
   padding-bottom: 0px;
+}
+
+
+@media (min-width: 1000px) {
+  .app {
+    display: grid;
+    min-height: 100vh;
+    gap: 5px;
+    grid-template-areas: 
+    "s s h h h h a a"
+    "s s n m m m a a"
+    "s s n m m m a a"
+    "s s f f f f a a"
+    ;
+  }
+
+  header {
+    grid-area: h;
+  }
+
+  nav {
+    grid-area: n;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  main {
+    grid-area: m;
+  }
+
+  footer {
+    grid-area: f;
+  }
 }
